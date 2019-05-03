@@ -2,7 +2,7 @@
 
 This is a list of acronyms in VA today.
 
-[Chris Given](christopher.given@va.gov) has a slack bot for using this list to help out on particular terms, via /wtf <term>
+[Chris Given](christopher.given@va.gov) has a integrated the [`/wtf <term>`](https://github.com/paultag/wtf) Slack bot and command for using this list to help out on particular terms. 
 
 ## Clean up
 
