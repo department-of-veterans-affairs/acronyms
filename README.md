@@ -2,7 +2,7 @@
 
 This is a list of acronyms in VA today.
 
-[Chris Given](christopher.given@va.gov) has a integrated the [`/wtf <term>`](https://github.com/paultag/wtf) Slack bot and command for using this list to help out on particular terms. 
+[Patrick Bateman](patrick.bateman@va.gov) maintains a [Slack slash command](https://api.slack.com/slash-commands) for the DSVA team that depends on this list. It was inspired by a previous integration of the [/wtf Slack bot](https://github.com/paultag/wtf), formerly maintained by Chris Given.
 
 ## Clean up
 
