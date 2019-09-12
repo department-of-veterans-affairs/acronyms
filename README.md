@@ -2,7 +2,11 @@
 
 This is a list of acronyms in VA today.
 
-[Patrick Bateman](patrick.bateman@va.gov) maintains a [Slack slash command](https://api.slack.com/slash-commands) for the DSVA team that depends on this list. It was inspired by a previous integration of the [/wtf Slack bot](https://github.com/paultag/wtf), formerly maintained by Chris Given.
+Among other things, this list powers a DSVA [Slack bot](https://github.com/department-of-veterans-affairs/wtf-bot).
+
+## Contributing
+
+Commits directly to `master` are welcome. If you would prefer a review, create a pull request and select [batemapf](https://github.com/batemapf) as a reviewer.
 
 ## Clean up
 
