@@ -5,3 +5,8 @@ sed -i '' '/Title,/d' output.csv
 sed -i '' '1i\
 Title,Meaning,Context,Notes
 ' output.csv
+
+# run csv lint if installed (https://github.com/theodi/csvlint.rb)
+if [ -x "$(command -v csvlint)" ]; then
+  csvlint output.csv
+fi
