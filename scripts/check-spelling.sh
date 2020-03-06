@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 echo "Running spell check on acronyms.csv"
 echo "Potentially misspelled words:"
 # 1. Removes the first column of acronyms
