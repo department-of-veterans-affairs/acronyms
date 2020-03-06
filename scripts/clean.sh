@@ -2,7 +2,7 @@
 
 OUTPUTFILE=output.csv
 
-sort -d -f acronyms.csv | uniq -i > ${OUTPUTFILE}
+sort -d -f ../acronyms.csv | uniq -i > ${OUTPUTFILE}
 sed -i '' '/Title,/d' ${OUTPUTFILE}
 sed -i '' '1i\
 Title,Meaning,Context,Notes

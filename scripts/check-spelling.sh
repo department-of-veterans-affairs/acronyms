@@ -7,7 +7,7 @@ echo "Potentially misspelled words:"
 # 3. Lowercases all mixed-case words
 # 4. Passes result to hunspell, including use of a custom VA dictionary
 # 5. Sorts the output, removing duplicates
-cut -d, -f2-4 acronyms.csv | \
+cut -d, -f2-4 ../acronyms.csv | \
 gsed -E 's/\<[[:upper:]|[:digit:]]{2,}\>/ /g' | \
 gsed -E 's/([[:upper:]]*[[:lower:]]+[[:upper:]]+[[:lower:]]*)+/\L&/g' | \
 hunspell -d en_us,en_med_glut -p va.dic -l | \

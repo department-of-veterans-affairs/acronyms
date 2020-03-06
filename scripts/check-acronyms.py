@@ -40,7 +40,6 @@ def process_row(row: list) -> list:
 
 
 def main(csv_filename: str):
-
     csv.register_dialect('my_format', lineterminator='\n', strict=True)
     with open(csv_filename, newline='') as csv_file:
         csv_reader = csv.reader(csv_file)
@@ -61,7 +60,7 @@ if __name__ == '__main__':
         description="Fixes and outputs to stdout various issues with " +
         "acronyms file.")
     parser.add_argument('-f', '--file', required=False, action='store',
-                        default='acronyms.csv',
-                        help="File to use. Default: acronyms.csv")
+                        default='../acronyms.csv',
+                        help="File to use. Default: ../acronyms.csv")
     args = parser.parse_args()
     main(args.file)
