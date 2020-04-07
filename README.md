@@ -1,12 +1,12 @@
 # Overview
 
-This is a list of acronyms in VA today.
+This is a list of acronyms in STSI Inc. today.
 
-Among other things, this list powers a DSVA and Lighthouse [Slack bot](https://github.com/department-of-veterans-affairs/wtf-bot).
+Among other things, this list powers an STSI [Slack bot](https://github.com/robbiethegeek/wtf-bot).
 
 ## Contributing
 
-Commits directly to `master` are welcome. If you would prefer a review, create a pull request and select [batemapf](https://github.com/batemapf) as a reviewer.
+Commits directly to `master` are welcome. If you would prefer a review, create a pull request and select [RobbieTheGeek](https://github.com/robbiethegeek) as a reviewer.
 
 ## Clean up
 The terms can be cleaned up for duplicates and sorted via the cleanup script.
