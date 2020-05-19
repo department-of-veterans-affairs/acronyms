@@ -56,8 +56,8 @@ AC,Acceptance Criteria,,
 AC,Actual Cost,,
 AC,Ambulatory Care,,
 AC,Antecubital,,
-ACAS,Assurance Compliance Assessment Solution,ACAS Scan results are valid Test Results that can be uploaded in eMASS,Assured Compliance Assessment Solution (ACAS) is a software set of information security tools used for vulnerability scanning and risk assessment by agencies of the United States Department of Defense (DoD). It performs automated vulnerability scanning and device configuration assessment.
 ACAP,Access and Clinic Administration Program,,
+ACAS,Assurance Compliance Assessment Solution,ACAS Scan results are valid Test Results that can be uploaded in eMASS,Assured Compliance Assessment Solution (ACAS) is a software set of information security tools used for vulnerability scanning and risk assessment by agencies of the United States Department of Defense (DoD). It performs automated vulnerability scanning and device configuration assessment.
 AC,Associate Chief of Staff,,
 ACBE,Air Contrast Barium Enema,,
 ACC,Accounting Classification Code,,
@@ -4665,9 +4665,9 @@ SR,Service Request,,
 SR,Sinus rhythm,,
 SRS,Software Requirements Specification,,
 SR,Systems Redesign,,
+SRTP,Secure Real-Time Transport Protocol,,"SRTP is a security profile for RTP that adds confidentiality, message authentication, and replay protection to that protocol."
 SRT,Special Response Team,,
 SRT,System Review Team,,
-SRTP,Secure Real-Time Transport Protocol,,"SRTP is a security profile for RTP that adds confidentiality, message authentication, and replay protection to that protocol."
 SSAA,System Security Authorization Agreement,,
 SSAC,Source Selection Advisory Council,,
 SSA,Social Security Administration,,
