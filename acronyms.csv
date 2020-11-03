@@ -5181,7 +5181,7 @@ VDD,Version Description Document,,
 VDEF,VistA Data Extraction Framework,,
 VDEM,VistA Data Extraction Mapping,,
 VDF,VistA Data Feeds,,
-VDIF,Veterans Data Integration and Federation,,
+VDIF,Veterans Data Integration and Federation,,middleware thing for standardizing data from VistA instances 
 VDIM,VHA Dynamic Integration Model,,
 VDI,Virtual Desktop Infrastructure,,
 VDL,VA Software Document Library,,
