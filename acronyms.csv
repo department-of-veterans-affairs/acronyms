@@ -280,6 +280,7 @@ AMMS,Acquisition and Material Management Services,,
 A&MMS,Acquisitions and Materials Management Services,,
 AMO,Appeals Management Office,,
 AMOD,Admitting Officer of the Day,,
+AMPL,Advanced Medication Platform,,Enhancements to the capabilities of VistA Pharmacy package through the Advanced Medication Platform (AMPL) Pharmacy Graphic User Interface (GUI) to provide pharmacists with a single point of access to patients' medical data in a clearer and more user friendly display
 AMR,Automated Maintenance Reporting,,
 AMSA,Advanced Medical Support Assistant,,
 AMS,Accu-Med Services,,
@@ -1062,7 +1063,7 @@ CPR,Computer Patient Record,,
 CPRI,Computer-Based Patient Record Institute,,
 CPRI-HOST,Computer-based Patient Record Institute - Healthcare Open Systems and Trials,,
 CPRR,Cost per [Patient] Reportable Result,,
-CPRS,Computerized Patient Record System,,the VA electronic health record front-end 
+CPRS,Computerized Patient Record System,,the VA electronic health record front-end
 CPRS-R,Computerized Patient Record System Reengineered,,
 CPSC,Cardiac Pacemaker Surveillance Center,,
 CPS,Certified Peer Specialist,,
@@ -5182,7 +5183,7 @@ VDD,Version Description Document,,
 VDEF,VistA Data Extraction Framework,,
 VDEM,VistA Data Extraction Mapping,,
 VDF,VistA Data Feeds,,
-VDIF,Veterans Data Integration and Federation,,middleware thing for standardizing data from VistA instances 
+VDIF,Veterans Data Integration and Federation,,middleware thing for standardizing data from VistA instances
 VDIM,VHA Dynamic Integration Model,,
 VDI,Virtual Desktop Infrastructure,,
 VDL,VA Software Document Library,,
