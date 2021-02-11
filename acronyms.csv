@@ -3027,6 +3027,7 @@ MPL,Master Patient Locator,,
 MPLS,Multiprotocol Label Switching,,
 MP,Manual Part,,
 MP,Medication Profile,,
+MPI,Master Patient Index,"The Master Patient Index (MPI) is located at the Austin Information Technology Center (AITC). It is composed of a unique list of persons and an associated list of VAMCs (Veterans Affairs Medical Centers) and other systems of interest where each person has been seen.", 
 MPR,Medication Possession Ratio,,the percentage of time a patient has access to medication
 MPR,Monthly Performance Report,,
 MPR,Monthly Progress Review,,
