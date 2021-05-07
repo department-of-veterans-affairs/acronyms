@@ -3082,6 +3082,7 @@ MSP,"Motor, Sensory & Pulses",,
 MSPV,Med/Surg Prime Vendor,,
 MSQCSR,Milestone Schedule Quarterly Congressional Status Report,,
 MSR,Medical Speech Recognition,,
+MSR,Monitoring Service Registry,,Database created by the Enterprise Command Center (ECC) to track monitoring status for VA systems
 MST,Military Sexual Trauma,claims processing,puts the claim in special operations processing lane
 MSV,Maintenance and Support of VistA,,
 MTC,Major Transaction Class,,
