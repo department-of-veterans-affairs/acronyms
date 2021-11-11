@@ -1,11 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (5.2.6)
+    activesupport (6.1.4.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      i18n (>= 0.7, < 2)
-      minitest (~> 5.1)
-      tzinfo (~> 1.1)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
+      zeitwerk (~> 2.3)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     colorize (0.8.1)
@@ -23,32 +24,32 @@ GEM
       typhoeus
       uri_template
     escape_utils (1.2.1)
-    ethon (0.14.0)
+    ethon (0.15.0)
       ffi (>= 1.15.0)
-    ffi (1.15.3)
-    i18n (1.8.10)
+    ffi (1.15.4)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     mime-types (3.3.1)
       mime-types-data (~> 3.2015)
-    mime-types-data (3.2021.0704)
+    mime-types-data (3.2021.0901)
     minitest (5.14.4)
     net-http-persistent (2.9.4)
     open_uri_redirections (0.2.1)
     public_suffix (4.0.6)
     rack (2.2.3)
     thor (1.1.0)
-    thread_safe (0.3.6)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
-    tzinfo (1.2.9)
-      thread_safe (~> 0.1)
+    tzinfo (2.0.4)
+      concurrent-ruby (~> 1.0)
     uri_template (0.7.0)
+    zeitwerk (2.5.1)
 
 PLATFORMS
-  ruby
+  x86_64-darwin-20
 
 DEPENDENCIES
   csvlint
 
 BUNDLED WITH
-   2.1.4
+   2.2.30

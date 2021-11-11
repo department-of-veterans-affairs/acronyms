@@ -2865,8 +2865,8 @@ LOD,Line of Duty,,
 LOE,Level Of Effort,,
 LOINC,"Logical Observation Identifiers, Names, and Codes",,
 LOL,Loss Of Limb,,
-LOROTA,Low Risk One Time Authentication,LoROTA is a simple service that uses a unique key (UUID) passed between a user and various services to authenticate that user for certain low risk activities like form submission,
 LO,Lot,,
+LOROTA,Low Risk One Time Authentication,LoROTA is a simple service that uses a unique key (UUID) passed between a user and various services to authenticate that user for certain low risk activities like form submission,
 LPC,Licensed Professional Counselor,,
 LPES,Legacy Product Enhancement Service,,
 L&P,Load & Performance,,
@@ -3850,7 +3850,7 @@ PEC,Preventive Ethics Coordinator,,
 PEC,Psychiatric Emergency Clinic,,
 PECS,Pharmacy Enterprise Customization System,,
 PEMS,Patient Education Management System,,
-PENTAD,"VA medical center executive leadership",,"Normally consists of Director, Associate Director, Assistant Director, Chief of Staff, and Executive Nurse Manager"
+PENTAD,VA medical center executive leadership,,"Normally consists of Director, Associate Director, Assistant Director, Chief of Staff, and Executive Nurse Manager"
 PEO,Program Executive Office,,
 PEP,Project Execution Plan,,
 PE,Preventive Ethics,,
@@ -4188,7 +4188,7 @@ QUIC,Quality Improvement Checklist,,
 QuIC,Quality Interagency Coordination Task Force,,
 RACC,Restricted Access Claims Center,,
 RACE,Rescue Activate Confine Extinguish,,
-RACI,"Responsible, Accountable, Consulted, Informed",,"describes the participation by various roles in completing tasks or deliverables for a project or business process"
+RACI,"Responsible, Accountable, Consulted, Informed",,describes the participation by various roles in completing tasks or deliverables for a project or business process
 RAC,Resource Allocation Committee,,
 RadLex,Radiology Lexicon,,
 RAD,Rapid Application Development,,
@@ -5053,7 +5053,7 @@ TTF,Transformation Task Force,,
 TTO,Temporary Transfer,,
 TTSI,Technology Tools Solution Identification,,
 TTWB,Toe-Touch Weight Bearing,,
-TUD,Test User Dashboard,,"A tool owned by the Testing Tools Team to facilitate login into va.gov environments (dev/stage/prod) with test user accounts"
+TUD,Test User Dashboard,,A tool owned by the Testing Tools Team to facilitate login into va.gov environments (dev/stage/prod) with test user accounts
 TUES,Tuesday,,
 TURP,Transurethral Resection of the Prostate,,
 TVCS,Trend Virus Control Software,,
@@ -5599,5 +5599,5 @@ XUA,Cross Enterprise User Assertion,,
 Y2K,Year 2000,,
 YO,Year Old,,
 ZIFA,Zachman Institute for Framework,,
-ZIP,Common File format for Data Compression,,"ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed."
+ZIP,Common File format for Data Compression,,ZIP is an archive file format that supports lossless data compression. A ZIP file may contain one or more files or directories that may have been compressed.
 ZIP,Zone Improvement Program,,
