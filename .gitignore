@@ -1,3 +1,18 @@
+# OSX
+.DS_Store
+
+# Misc
 leveldb
-scripts/output.csv
 .idea/
+
+# temp files
+scripts/output.csv
+
+# Python
+venv
+__pycache__/
+.pytest_cache
+
+# test results
+results/
+.coverage*

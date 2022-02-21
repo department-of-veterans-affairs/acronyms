@@ -3,7 +3,7 @@
 Script to check for various formatting issues with acronyms file
 Does a few things, including:
 1) Moving any all-lower-case definitions to Title case
-2) Moving any all-upper-case strings to Title case
+2) Moving any all-upper-case strings in definitions to Title case
 3) Turning smart quotes (e.g. “”‘’) to regular quotes
 """
 
@@ -24,11 +24,15 @@ def fix_all_upper(row: list) -> list:
     return row
 
 
+# borrowed frmo https://stackoverflow.com/questions/40330953/dict-to-remove-smart-quotes
 def fix_smart_quotes(row: list) -> list:
-    row = [elem.replace("‘", "'") for elem in row]
-    row = [elem.replace("’", "'") for elem in row]
-    row = [elem.replace("“", "\"") for elem in row]
-    row = [elem.replace("”", "\"") for elem in row]
+
+    charmap = {0x201c: u'"',  # double left
+               0x201d: u'"',  # double right
+               0x2018: u"'",  # single left
+               0x2019: u"'"}  # single right
+
+    row = row.translate(charmap)
     return row
 
 
@@ -44,7 +48,7 @@ def main(csv_filename: str):
     with open(csv_filename, newline='') as csv_file:
         csv_reader = csv.reader(csv_file)
         csv_writer = csv.writer(sys.stdout, quoting=csv.QUOTE_MINIMAL,
-            dialect='my_format')
+                                dialect='my_format')
         line_count = 0
         for row in csv_reader:
             if line_count == 0:

@@ -1,0 +1,11 @@
+# Dependent packages used during development or testing
+
+# Use requirements.txt as a constraint for anything installed here:
+-c requirements.txt
+
+# Dev tooling
+autopep8
+flake8
+pip-tools
+pytest-cov
+python-dotenv
