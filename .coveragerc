@@ -1,0 +1,15 @@
+[run]
+branch = True
+source = scripts
+omit =
+  **/tests/*
+  **/test_*
+  **/conftest*
+  **/__init__.py
+  **/__main__.py
+
+[html]
+directory = results/coverage
+
+[xml]
+output = results/coverage/pytest-coverage.xml

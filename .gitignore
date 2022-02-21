@@ -15,4 +15,4 @@ __pycache__/
 
 # test results
 results/
-.coverage*
+.coverage
