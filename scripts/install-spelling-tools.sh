@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Installs hunspell and spelling dictionaries (en_US and medical English)
-# Note: Only tested on OSX 10.14, may not work on other operating systems
+# Note: Only tested on OSX 10.14/12.2, may not work on other operating systems
 
 set -e
 

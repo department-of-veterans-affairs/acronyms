@@ -1,0 +1,29 @@
+---
+name: Script CI
+
+# CI for scripts used to manage/clean-up acronyms file
+# Triggers the workflow on push or pull request
+# events but only on PRs for the master branch
+on:
+  push:
+    paths-ignore:
+      - 'acronyms.csv'
+  pull_request:
+    paths-ignore:
+      - 'acronyms.csv'
+    branches: [ master ]
+
+jobs:
+  build:
+    name: build and test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version-file: '.python-version' # Read python version from a file
+      - name: Install dependencies
+        run: make python-install
+      - name: Run tests
+        run: make test

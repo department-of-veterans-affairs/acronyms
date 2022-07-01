@@ -1,0 +1,27 @@
+---
+name: Acronym CI
+
+# Validates formatting of acronym file
+# Triggers the workflow on push or pull request events but only on PRs for the master branch
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'acronyms.csv'
+  pull_request:
+    paths:
+      - 'acronyms.csv'
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+      - name: Run csvlint on acronyms file
+        run: bundle exec csvlint acronyms.csv
