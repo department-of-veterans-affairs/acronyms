@@ -1,3 +1,4 @@
+[![Acronym CI](https://github.com/department-of-veterans-affairs/acronyms/actions/workflows/acronym-ci.yml/badge.svg)](https://github.com/department-of-veterans-affairs/acronyms/actions/workflows/acronym-ci.yml)
 # Overview
 
 This is a list of acronyms in VA today.
