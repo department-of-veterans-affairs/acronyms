@@ -4,6 +4,7 @@ name: Acronym CI
 # Validates formatting of acronym file
 # Triggers the workflow on push or pull request events but only on PRs for the master branch
 on:
+  workflow_dispatch:
   push:
     paths:
       - 'acronyms.csv'
