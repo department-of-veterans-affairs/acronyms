@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to check for various formatting issues with acronyms file
+Script to fix various formatting issues with acronyms file
 Does a few things, including:
 1) Moving any all-lower-case definitions to Title case
 2) Moving any all-upper-case strings in definitions to Title case
@@ -24,15 +24,16 @@ def fix_all_upper(row: list) -> list:
     return row
 
 
-# borrowed frmo https://stackoverflow.com/questions/40330953/dict-to-remove-smart-quotes
+# borrowed from https://stackoverflow.com/questions/40330953/dict-to-remove-smart-quotes
 def fix_smart_quotes(row: list) -> list:
-
     charmap = {0x201c: u'"',  # double left
                0x201d: u'"',  # double right
                0x2018: u"'",  # single left
                0x2019: u"'"}  # single right
 
-    row = row.translate(charmap)
+    for i, elem in enumerate(row):
+        row[i] = elem.translate(charmap)
+
     return row
 
 
