@@ -12,12 +12,17 @@ help:  ## Prints out documentation for available commands
 			printf "\033[36m%-30s\033[0m %s\n", $$1, $$NF \
 		}' $(MAKEFILE_LIST)
 
-# brew
+# spelling
 .PHONY: spelling-tool-install
 spelling-tool-install:  ## Installs spelling tools (only works on OSX for now)
 ifneq ($(CI_ARG), true)
 	./scripts/install-spelling-tools.sh
 endif
+
+.PHONY: spelling-check
+spelling-check:  ## Checks spelling with hunspell
+	@cd scripts; \
+	./check-spelling.sh
 
 ## Pip / Python
 .PHONY: python-install
@@ -72,7 +77,7 @@ pip-install: $(SITE_PACKAGES)
 .PHONY: unit-test
 unit-test:  pip-install   ## Run python unit tests
 	PYTHONPATH=scripts \
-	python -m pytest -v --cov --cov-report term --cov-report xml --cov-report html --cov-fail-under=50
+	python -m pytest -v --cov --cov-report term --cov-report xml --cov-report html
 
 .PHONY: flake8
 flake8: pip-install 	## Run Flake8 python static style checking and linting
@@ -83,13 +88,37 @@ flake8: pip-install 	## Run Flake8 python static style checking and linting
 test: unit-test flake8   ## Run unit tests, static analysis
 	@echo "All tests passed."  # This should only be printed if all of the other targets succeed
 
+.PHONY: format-acronyms
+format-acronyms:  ## Formats acronyms file, cleaning up smart quotes and capitalization. Results written to STDOUT
+	@cd scripts; \
+	./format_acronyms.py
+
+#Ruby
+.PHONY: csvlint-install
+csvlint-install:  ## Install csvlint
+	bundle install
+
+.PHONY: csvlint
+csvlint:  ## Runs csvlint on acronyms file
+	csvlint acronyms.csv
+
+# Other tools
+.PHONY: dupe-acronyms
+dupe-acronyms:  ## prints out duplicated acronyms
+	@cd scripts; \
+	./print-dupe-acronyms.sh
+
+.PHONY: dupe-definitions
+dupe-definitions:  ## prints out duplicated definitions
+	@cd scripts; \
+	./print-dupe-definitions.sh
+
 .PHONY: clean
 clean: ## Delete any directories, files or logs that are auto-generated and python packages
 	rm -rf venv
 	rm -rf results
 	rm -rf .pytest_cache
 	rm -f .coverage
-	# We keep spark-distro as this is committed to git
 	find python -name '__pycache__' -type d | xargs rm -rf
 	@echo virtualenvironment was deleted. Type 'deactivate' to deactivate the shims.
 	@echo Run 'make python-install' to reinstall the virtual environment.
