@@ -1,24 +1,23 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (7.0.3)
+    activesupport (7.0.3.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    colorize (0.8.1)
     concurrent-ruby (1.1.10)
-    csvlint (0.4.0)
+    connection_pool (2.2.5)
+    csvlint (1.0.0)
       activesupport
       addressable
-      colorize
       escape_utils
-      mime-types
-      net-http-persistent (< 3.0)
+      net-http-persistent
       open_uri_redirections
       rack
+      rainbow
       thor
       typhoeus
       uri_template
@@ -26,16 +25,15 @@ GEM
     ethon (0.15.0)
       ffi (>= 1.15.0)
     ffi (1.15.5)
-    i18n (1.10.0)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
-    mime-types (3.4.1)
-      mime-types-data (~> 3.2015)
-    mime-types-data (3.2022.0105)
-    minitest (5.16.1)
-    net-http-persistent (2.9.4)
+    minitest (5.16.2)
+    net-http-persistent (4.0.1)
+      connection_pool (~> 2.2)
     open_uri_redirections (0.2.1)
     public_suffix (4.0.7)
     rack (2.2.4)
+    rainbow (3.1.1)
     thor (1.2.1)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
