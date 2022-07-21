@@ -7,7 +7,7 @@ Among other things, this list powers a DSVA and Lighthouse [Slack bot](https://g
 
 ## Contributing
 
-Commits directly to `master` are welcome. If you would prefer a review, create a pull request and select [batemapf](https://github.com/batemapf) as a reviewer.
+Create a pull request; if the ci passes you should be able to merge it.
 
 ## CI
 Any changes to the acronyms file will trigger a CI job that will run lint on the acronyms file to check for errors.
