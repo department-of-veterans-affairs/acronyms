@@ -2314,7 +2314,7 @@ HLA,HealtheLiving Assessment,,
 HLD,Hyperlipidemia,,
 HLM,Healthy Living Messages,,
 HLO,HL7 Optimized,,
-HLR,Higher Level Review,,
+HLR,Higher Level Review,A review of a claim by a more senior representative after the claim has been challenged,See Rating Veterans Service Representative (RVSR)
 HMIS,History Management Information System,,
 HMP,Health Management Platform,,
 HNL,Non Hodgkins Lymphoma,,
