@@ -4445,7 +4445,7 @@ R,Respiration(s),,
 R,Right,,
 RR,Respiratory Rate,,
 RR,Responsible Role,,
-RRD,Rapid Ready for Decision,,
+RRD,Rapid Ready for Decision,An attribute of a claim that allows certain disability claims to be fast-tracked through the process,Certain conditions (e.g. hypertension) trigger this attribute on a claim
 RRR,Regular rate rhythm,,
 RRS,Records Retrieval System,,
 RRTP,Residential Rehab Treatment Program,,
