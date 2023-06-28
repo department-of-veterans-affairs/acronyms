@@ -9,7 +9,7 @@ Among other things, this list powers a DSVA and Lighthouse [Slack bot](https://g
 
 Create a pull request; if the ci passes you can merge it. The `@all-va` team should have write access.
 
-When adding a definition, please add a concise blurb in the context column about how this term is relevant to our work. _You can wrap text in quotes to avoid punctuation breaking the CSV_. 
+When adding a definition, please add a concise blurb in the context column about how this term is relevant to our work. _You can wrap text in quotes to avoid punctuation breaking the CSV_.
 
 ## CI
 Any changes to the acronyms file will trigger a CI job that will run lint on the acronyms file to check for errors.
