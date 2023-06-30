@@ -28,3 +28,6 @@ You can (optionally) install [csvlint](https://github.com/theodi/csvlint.rb) to 
 * `make dupe-acronyms` will output to stdout acronyms that have multiple definitions. It can be used to check for potential duplicates.
 * `make dupe-definitions` will output to stdout definitions that are the same across different acronyms.
 * `make spelling-check` will check the spelling of all of the words in the acronyms file and print out potential errors. You need to run `make spelling-tool-install` first.
+
+
+TEST
