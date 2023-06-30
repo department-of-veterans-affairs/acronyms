@@ -19,12 +19,12 @@ agate-sql==0.5.8
 babel==2.10.3
     # via agate
 csvkit==1.0.7
-    # via -r scripts/requirements.in
+    # via -r requirements.in
 dbfread==2.0.7
     # via agate-dbf
 et-xmlfile==1.1.0
     # via openpyxl
-future==0.18.2
+future==0.18.3
     # via parsedatetime
 greenlet==1.1.2
     # via sqlalchemy
@@ -39,7 +39,7 @@ openpyxl==3.0.10
 parsedatetime==2.4
     # via agate
 python-dateutil==2.8.2
-    # via -r scripts/requirements.in
+    # via -r requirements.in
 python-slugify==6.1.2
     # via agate
 pytimeparse==1.1.8
