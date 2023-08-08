@@ -21,7 +21,7 @@ The terms can be cleaned up for duplicates and sorted via the cleanup script.
 Run it via `cd scripts && ./clean.sh`. An output.csv file will be generated that you can replace the acronyms.csv file with.
 
 ### csvlint
-You can (optionally) install [csvlint](https://github.com/theodi/csvlint.rb) to check the format of the acronyms file. It requires Ruby v2.7.6 (later versions don't seem to work). You can install it with `make csvlint-install` and then run it with `make csvlint`
+You can (optionally) install [csvlint](https://github.com/Data-Liberation-Front/csvlint.rb) to check the format of the acronyms file. It requires Ruby v3.2.2. You can install it with `make csvlint-install` and then run it with `make csvlint`
 
 ### Other cleanup scripts
 * `make format-acronyms` to fix other issues with the acronyms file, such as moving any all-lower-case or all-upper-case definition strings to title case, and turning smart quotes (e.g. “”‘’) to regular quotes. It will output to stdout.
