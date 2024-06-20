@@ -2112,6 +2112,7 @@ GBL,Government Bill of Lading,,
 GCC,Government Community Cloud (see MAG and MAC),,
 GC,General Counsel,,
 GCID,Get Corresponding IDs,,
+GCLAWS,General Counsel Legal Automation Workload System,A system of records to perform VA legal workload management for the Office of General Counsel,
 GCM,General Court Martial,,
 GCP,Good Clinical Practice,,
 GCP,Google Cloud Platform,,The Google Cloud Platform is a part of Google Services which has a FedRAMP High ATO. Typically GCP will be used colloquially when referencing Google Services as a whole.
