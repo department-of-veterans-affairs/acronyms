@@ -1,0 +1,66 @@
+[tool.poetry]
+name = "format_acronyms"
+version = "1.0.0"
+description = "Fixes some formatting issues in acronyms file"
+authors = ["Department of Veterans Affairs"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+csvkit = "^2.0.0"
+python-dateutil = "^2.9.0.post0"
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^5.0.0"
+ruff = "^0.4.10"
+
+[tool.poetry.scripts]
+format_acronyms = "format_acronyms.format_acronyms:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+# linting
+[tool.ruff.lint]
+select = [
+    # flake8-comprehensions
+    "C4",
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-pytest
+    "PT",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+
+# testing
+[tool.coverage.run]
+branch = true
+source = [
+    "format_acronyms",
+]
+omit = [
+    "**/__init__.py"
+]
+
+[tool.coverage.html]
+directory = "results/coverage"
+
+[tool.pytest.ini_options]
+# Show extra test summary info as specified by chars (a)ll except passed
+# Output test results to junit.xml
+addopts = "-vvv --tb=long -ra --junitxml=results/unit/pytest-unit.xml --color=yes"
+testpaths = "tests"

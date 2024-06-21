@@ -26,10 +26,12 @@ def fix_all_upper(row: list) -> list:
 
 # borrowed from https://stackoverflow.com/questions/40330953/dict-to-remove-smart-quotes
 def fix_smart_quotes(row: list) -> list:
-    charmap = {0x201c: u'"',  # double left
-               0x201d: u'"',  # double right
-               0x2018: u"'",  # single left
-               0x2019: u"'"}  # single right
+    charmap = {
+        0x201C: '"',  # double left
+        0x201D: '"',  # double right
+        0x2018: "'",  # single left
+        0x2019: "'",  # single right
+    }
 
     for i, elem in enumerate(row):
         row[i] = elem.translate(charmap)
@@ -44,28 +46,30 @@ def process_row(row: list) -> list:
     return row
 
 
-def main(csv_filename: str):
-    csv.register_dialect('my_format', lineterminator='\n', strict=True)
-    with open(csv_filename, newline='') as csv_file:
+def main():
+    parser = argparse.ArgumentParser(description="Fixes and outputs to stdout various issues with " + "acronyms file.")
+    parser.add_argument(
+        "-f",
+        "--file",
+        required=False,
+        action="store",
+        default="acronyms.csv",
+        help="File to use. Default: acronyms.csv",
+    )
+    args = parser.parse_args()
+    csv.register_dialect("my_format", lineterminator="\n", strict=True)
+    csv_filename = args.file
+    with open(csv_filename, newline="") as csv_file:
         csv_reader = csv.reader(csv_file)
-        csv_writer = csv.writer(sys.stdout, quoting=csv.QUOTE_MINIMAL,
-                                dialect='my_format')
-        line_count = 0
-        for row in csv_reader:
+        csv_writer = csv.writer(sys.stdout, quoting=csv.QUOTE_MINIMAL, dialect="my_format")
+
+        for line_count, row in enumerate(csv_reader):
             if line_count == 0:
                 pass
             else:
                 row = process_row(row)
-            line_count += 1
             csv_writer.writerow(row)
 
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(
-        description="Fixes and outputs to stdout various issues with " +
-        "acronyms file.")
-    parser.add_argument('-f', '--file', required=False, action='store',
-                        default='../acronyms.csv',
-                        help="File to use. Default: ../acronyms.csv")
-    args = parser.parse_args()
-    main(args.file)
+if __name__ == "__main__":
+    main()
