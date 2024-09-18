@@ -41,7 +41,7 @@ format: $(INSTALL_STAMP)  ## Format code base
 
 .PHONY: format-acronyms
 format-acronyms:  ## Formats acronyms file, cleaning up smart quotes and capitalization. Results written to STDOUT
-	"$(POETRY)" run format_acronyms
+	@"$(POETRY)" run format_acronyms
 
 #Ruby
 .PHONY: csvlint-install
@@ -50,7 +50,7 @@ csvlint-install:  ## Install csvlint
 
 .PHONY: csvlint
 csvlint:  ## Runs csvlint on acronyms file
-	bundle exec csvlint acronyms.csv
+	@bundle exec csvlint acronyms.csv
 
 # Other tools
 .PHONY: dupe-acronyms
