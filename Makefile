@@ -54,14 +54,18 @@ csvlint:  ## Runs csvlint on acronyms file
 
 # Other tools
 .PHONY: dupe-acronyms
-dupe-acronyms:  ## prints out duplicated acronyms
+dupe-acronyms: $(INSTALL_STAMP)  ## prints out duplicated acronyms
 	@cd scripts; \
 	./print-dupe-acronyms.sh
 
 .PHONY: dupe-definitions
-dupe-definitions:  ## prints out duplicated definitions
+dupe-definitions: $(INSTALL_STAMP)  ## prints out duplicated definitions
 	@cd scripts; \
 	./print-dupe-definitions.sh
+
+.PHONY: sort-acronyms
+sort-acronyms: $(INSTALL_STAMP)  ## Sorts acronyms file by first and second field
+	"$(POETRY)" run csvsort --ignore-case --columns "Title,Meaning" acronyms.csv | uniq -i > sorted.csv
 
 # spelling
 .PHONY: spelling-tool-install

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# This script can be used as a local version of the wtf-bot
 
 set -e
 set -u
