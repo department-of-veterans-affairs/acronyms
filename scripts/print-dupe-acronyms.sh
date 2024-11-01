@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # Prints out duplicate acronyms (first column matches)
-
-awk -F , 'NR==FNR{a[$1]++; next} a[$1]>1' ../acronyms.csv ../acronyms.csv | sort
+poetry run csvsql --query \
+"SELECT * FROM 'acronyms' WHERE Title IN (SELECT Title FROM 'acronyms' GROUP BY Title HAVING COUNT(Title) > 1) ORDER BY Title" \
+../acronyms.csv
