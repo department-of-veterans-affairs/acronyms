@@ -551,6 +551,7 @@ BIOS,Business Integration & Outcomes Service,OIT organization that works with bu
 BIPAP,Bilevel positive airway pressure,,
 BIP,Benefits Integration Platform,VBA,
 BIRLS,Beneficiary Identification and Records Locator (Sub)System,,
+BIS,Benefits Intake Service,API service that digitally submit documents for VA benefits claims directly to the claims intake process of the VBA,
 BISL,Business Intelligence Service Line,,
 BJP,Business Justification Package,,
 BKA,Below Knee Amputation,,
