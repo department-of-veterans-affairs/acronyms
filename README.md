@@ -21,9 +21,7 @@ Any changes to the acronyms file will trigger a CI job that will run lint on the
 Any other changes will trigger a scripts-CI job that will run unit tests on scripts in this repository used to cleanup the acronyms file.
 
 ## Clean up
-The terms can be cleaned up for duplicates and sorted via the cleanup script.
-
-Run it via `cd scripts && ./clean.sh`. An output.csv file will be generated that you can replace the acronyms.csv file with.
+The terms can be cleaned up for duplicates and sorted via `make sort-acronyms`. This will output a `sorted.csv` file you can compare with `acronyms.csv` and overwrite if desired.
 
 ### csvlint
 You can (optionally) install [csvlint](https://github.com/Data-Liberation-Front/csvlint.rb) to check the format of the acronyms file. You can install it with `make csvlint-install` and then run it with `make csvlint`
@@ -32,4 +30,4 @@ You can (optionally) install [csvlint](https://github.com/Data-Liberation-Front/
 * `make format-acronyms` to fix other issues with the acronyms file, such as moving any all-lower-case or all-upper-case definition strings to title case, and turning smart quotes (e.g. “”‘’) to regular quotes. It will output to stdout.
 * `make dupe-acronyms` will output to stdout acronyms that have multiple definitions. It can be used to check for potential duplicates.
 * `make dupe-definitions` will output to stdout definitions that are the same across different acronyms.
-* `make spelling-check` will check the spelling of all of the words in the acronyms file and print out potential errors. You need to run `make spelling-tool-install` first.
+* `make spelling-check` will check the spelling of all of the words in the acronyms file and print out potential spelling errors. You need to run `make spelling-tool-install` first.
