@@ -2152,6 +2152,7 @@ GFE,Government Furnished Equipment,,VA Laptop or Desktop
 GFI,Government Furnished Information,,
 GGAC,Geriatrics and Gerontology Advisory Committee,,
 GHATP,Graduate Healthcare Administration Training Program,,
+GHCR,GitHub Container Registry,This is a place we host Docker images for sites/apps,
 GHELP,Geriatric High Risk Evaluation and Liaison Program,,
 GI,Gastrointestinal,,
 GI,Government Issue,,
