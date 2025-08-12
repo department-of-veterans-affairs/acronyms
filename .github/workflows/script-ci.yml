@@ -2,16 +2,16 @@
 name: Script CI
 
 # CI for scripts used to manage/clean-up acronyms file
-# Triggers the workflow on push or pull request
+# Triggers the workflow on pull request
 # events but only on PRs for the master branch
 on:
-  push:
-    paths-ignore:
-      - 'acronyms.csv'
   pull_request:
     paths-ignore:
       - 'acronyms.csv'
     branches: [ master ]
+
+permissions:
+  contents: read
 
 jobs:
   build:
