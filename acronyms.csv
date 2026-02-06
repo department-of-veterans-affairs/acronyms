@@ -755,6 +755,7 @@ CAU,Clinical Access Unit,,
 CAUTI,Catheter Acquired Urinary Tract Infection,,
 CAVC,Court of Appeals for Veterans Claims,appeals,group within judicial system that adjudicates appeals
 CAVE,Community Administration of Vaccine Encounters,VHA,"The CAVE project will record community administered immunizations, in the facility VistA instance. The goal is to prevent duplicative vaccinations and to allow providers at the facility to streamline their workflow by providing vaccination information in one place."
+CAVE,Common Attachment Validation Engine,"Uses AI to scan and prefill data from documents (e.g. death certificates)",
 CAVHCS,Central Alabama Veterans Health Care System,,
 CAVHS,Central Arkansas Veterans Healthcare System,,
 CB,Care Bereavement,,
